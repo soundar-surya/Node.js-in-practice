@@ -1,0 +1,15 @@
+{
+  "name": "webscrapping",
+  "version": "1.0.0",
+  "description": "puppeteer-web-scrapping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "surya",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.7",
+    "puppeteer": "^5.5.0"
+  }
+}
