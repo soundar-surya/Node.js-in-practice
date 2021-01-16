@@ -1,1 +1,1 @@
-# nodeJS-in-practice
+# Node.js-in-practice
