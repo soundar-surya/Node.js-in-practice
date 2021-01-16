@@ -13,8 +13,8 @@ module.exports = () => {
   });
 
   req.headers({
-      "x-rapidapi-key": key,
-      "x-rapidapi-host": host,
+      "x-rapidapi-key": key || process.env.key,
+      "x-rapidapi-host": host || process.env.host,
     "useQueryString": true
   });
 
