@@ -10,11 +10,13 @@ const server = http.createServer( (req, res) => {
                     .on('end', () => {
                         body = Buffer.concat(body).toString()
                         console.log(JSON.parse(body))
+                        
+                        res.statusCode = 200;
+                        res.setHeader('Content-Type', 'text/plain');
+                        res.end('Hello there!');
                     })
                     .on('err', e => console.log(e))
-                res.statusCode = 200;
-                res.setHeader('Content-Type', 'text/plain');
-                res.end('Hello world');
+          
                 break;
 
             default:
