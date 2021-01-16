@@ -1,5 +1,5 @@
 var unirest = require("unirest");
-const { key, host } = require('../config/keys');
+const keys = require('../config/keys');
 
 module.exports = () => {
 
@@ -13,8 +13,8 @@ module.exports = () => {
   });
 
   req.headers({
-      "x-rapidapi-key": key,
-      "x-rapidapi-host": host,
+      "x-rapidapi-key": keys.key,
+      "x-rapidapi-host": keys.host,
     "useQueryString": true
   });
 
