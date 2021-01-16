@@ -1,5 +1,5 @@
 const http = require('http');
-const {aim, amz} = require('./scrape/app');
+const {aim, amz} = require('./scrape/main');
 
 
 const server = http.createServer( (req, res) => {

@@ -1,10 +1,9 @@
 var unirest = require("unirest");
-const keys = require('../config/keys');
+const {key, host} = require('../config/keys');
 
 module.exports = () => {
 
   const req = unirest("GET", "https://amazon-product-reviews-keywords.p.rapidapi.com/product/reviews");
-  console.log(1)
   req.query({
     "asin": "B01N27QVPA",
     "page": "1",
@@ -13,8 +12,8 @@ module.exports = () => {
   });
 
   req.headers({
-      "x-rapidapi-key": keys.key,
-      "x-rapidapi-host": keys.host,
+      "x-rapidapi-key": key,
+      "x-rapidapi-host": host,
     "useQueryString": true
   });
 
